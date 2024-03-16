@@ -39,6 +39,8 @@ sources:
         +enabled: "{{ target.type == 'synapse' }}"
       azuresql:
         +enabled: "{{ target.type == 'sqlserver' }}"
+      teradata:
+        +enabled: "{{ target.type == 'teradata' }}"
 
 tests:
   dbt_external_tables_integration_tests:
@@ -55,3 +57,5 @@ tests:
         +enabled: "{{ target.type == 'synapse' }}"
       azuresql:
         +enabled: "{{ target.type == 'sqlserver' }}"
+      teradata:
+        +enabled: "{{ target.type == 'teradata' }}"
